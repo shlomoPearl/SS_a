@@ -5,8 +5,9 @@ FLAGS = -Wall -g
 all: loops loopd recursives recursived mains maindrec maindloop
 
 mains: main.o recursives 
-	 $(CC) $(FLAGS) -o mains main.o ./libclassloops.so -lm
-
+	 $(CC) $(FLAGS) -o mains main.o libclassrec.a -lm
+//mainsloop: main.o loops
+	//$(CC) $(FLAGS) -o mainsloop main.o libclassloops.a
 maindloop: main.o
 	 $(CC) $(FLAGS) -o maindloop main.o ./libclassloops.so -lm
 	 
