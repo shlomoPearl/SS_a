@@ -6,8 +6,8 @@ all: loops loopd recursives recursived mains maindrec maindloop
 
 mains: main.o recursives 
 	 $(CC) $(FLAGS) -o mains main.o libclassrec.a -lm
-//mainsloop: main.o loops
-	//$(CC) $(FLAGS) -o mainsloop main.o libclassloops.a
+mainsloop: main.o loops
+	$(CC) $(FLAGS) -o mainsloop main.o libclassloops.a -lm
 maindloop: main.o
 	 $(CC) $(FLAGS) -o maindloop main.o ./libclassloops.so -lm
 	 
