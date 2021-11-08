@@ -9,7 +9,7 @@ loopslib: libclassloops.a advancedClassificationLoop.o basicsClassification.o
 libclassloops.a: 
 	ar -rcs libclassloops.a advancedClassificationLoop.o basicsClassification.o
 
-loops: libclassloops.a advancedClassificationLoop.o basicsClassification.o
+loops: loopslib advancedClassificationLoop.o basicsClassification.o
 
 recursives: advancedClassificationRecursion.o basicsClassification.o
 	 ar -rcs libclassrec.a advancedClassificationRecursion.o basicsClassification.o
