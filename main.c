@@ -10,7 +10,7 @@ int main(){
 	for(int i=a;i<=b;i++){
 		int ans1 = isArmstrong(i);
 		if(ans1 !=0){
-			printf("%d",i);
+			printf(" %d",i);
 		}
 	}
 	printf("\n");
