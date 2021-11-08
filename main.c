@@ -4,7 +4,7 @@
 int main(){
 	int a;
 	int b;
-	printf("enter 2 numbers:\n");
+	//printf("enter 2 numbers:\n");
 	scanf("%d%d",&a,&b);
 	printf("The Armstrong numbers are: ");
 	for(int i=a;i<=b;i++){
