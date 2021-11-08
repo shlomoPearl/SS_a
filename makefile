@@ -4,12 +4,8 @@ FLAGS = -Wall -g
 
 all: loops loopd recursives recursived mains maindrec maindloop
 
-loopslib: libclassloops.a advancedClassificationLoop.o basicsClassification.o
-
-libclassloops.a: 
-	ar -rcs libclassloops.a advancedClassificationLoop.o basicsClassification.o
-
-loops: loopslib advancedClassificationLoop.o basicsClassification.o
+loops: libclassloops.a advancedClassificationLoop.o basicsClassification.o
+	 ar -rcs libclassloops.a advancedClassificationLoop.o basicsClassification.o
 
 recursives: advancedClassificationRecursion.o basicsClassification.o
 	 ar -rcs libclassrec.a advancedClassificationRecursion.o basicsClassification.o
